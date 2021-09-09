@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<factoryConfig>
+	<factoryParam>
+		<ddnsServerType>
+			<enum requireParam="userName">www.autoddns.com</enum>
+			<enum requireParam="userName,password">www.88ip.net</enum>
+			<enum requireParam="userName,password">www.dns2p.net</enum>
+			<enum requireParam="password,domainName">www.meibu.com</enum>
+			<enum requireParam="userName,password,domainName">www.dyndns.com</enum>
+			<enum requireParam="userName,password,domainName">www.no-ip.com</enum>
+			<enum requireParam="userName,password,domainName">www.dvrdydns.com</enum>
+			<enum requireParam="userName,password,domainName,serverAddr">MintDNS</enum>
+			<enum requireParam="userName,password,domainName">www.3322.org</enum>
+		</ddnsServerType>
+		<customerID id="205">TVTNeu</customerID>
+		<supportLanager>
+			<enum>0x0409</enum>
+			<enum>0x0404</enum>
+			<enum>0x041a</enum>
+			<enum>0x0405</enum>
+			<enum>0x0429</enum>
+			<enum>0x0407</enum>
+			<enum>0x0408</enum>
+			<enum>0x040e</enum>
+			<enum>0x0410</enum>
+			<enum>0x042f</enum>
+			<enum>0x0415</enum>
+			<enum>0x0816</enum>
+			<enum>0x0418</enum>
+			<enum>0x0419</enum>
+			<enum>0x041b</enum>
+			<enum>0x0424</enum>
+			<enum>0x080a</enum>
+			<enum>0x0c0a</enum>
+			<enum>0x041e</enum>
+			<enum>0x041f</enum>
+			<enum>0x0013</enum>
+			<enum>0x0402</enum>
+			<enum>0x040c</enum>
+			<enum>0x0411</enum>
+			<enum>0x0412</enum>
+			<enum>0x0421</enum>
+			<enum>0x042a</enum>
+			<enum>0x043f</enum>
+			<enum>0x0c01</enum>
+			<enum>0x0c1a</enum>
+			<enum>0x0427</enum>
+			<enum>0x0454</enum>
+		</supportLanager>
+		<supportResolution>
+			<enum>1280x1024</enum>
+			<enum>1920x1080</enum>
+			<enum>3840x2160</enum>
+		</supportResolution>
+		<manufacturer>
+			<item translateKey="IP Camera" protocol="TVT" Identity="TVT" username="admin" password="123456">TVT</item>
+			<item translateKey="HIKVISION" protocol="ONVIF" Identity="HIKVISION">HIKVISION</item>
+			<item translateKey="DAHUA" protocol="ONVIF" Identity="DAHUA">DAHUA</item>
+			<item translateKey="ONVIF" protocol="ONVIF" Identity="ONVIF">ONVIF</item>
+		</manufacturer>
+		<productModel>TD-2704TS-C</productModel>
+		<natServerType>			<enum>nat.autonat.com</enum>
+		</natServerType>
+	</factoryParam>
+	<hardwareParam>
+		<alarmInNum>4</alarmInNum>
+		<alarmOutNum>1</alarmOutNum>
+		<supportTalk>true</supportTalk>
+		<hardwareVersion>V1.01</hardwareVersion>
+		<diskInfo>
+			<diskCountIdentify>disk1</diskCountIdentify>
+			<disk1>
+				<item id="0:0:0:0" index="1">sata</item>
+			</disk1>
+		</diskInfo>
+		<ethPort>
+			<item>eth0</item>
+		</ethPort>
+		<maxPoeNum>0</maxPoeNum>
+		<ipChlNum>1</ipChlNum>
+		<analogChlNum>4</analogChlNum>
+		<audioInNum>4</audioInNum>
+		<chlSupSignalType>AHD:TVI:AUTO</chlSupSignalType>
+		<supportLite>true</supportLite>
+		<supportCVBS>true</supportCVBS>
+		<frontPanel chLED="true">1UZ</frontPanel>
+		<outputNum>1</outputNum>
+		<sn>NB11201AB8AS</sn>
+	</hardwareParam>
+</factoryConfig>

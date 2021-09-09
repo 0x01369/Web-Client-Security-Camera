@@ -1,0 +1,36 @@
+#! /bin/sh
+
+/bin/mount -a
+
+echo "
+            _ _ _ _ _ _ _ _ _ _ _ _
+            \  _  _   _  _ _ ___
+            / /__/ \ |_/
+           / __   /  -  _ ___
+          / /  / /  / /
+  _ _ _ _/ /  /  \_/  \_ ______
+___________\___\__________________
+"
+for initscript in /etc/init.d/S[0-9][0-9]*
+do
+	if [ -x $initscript ] ;
+	then
+		echo "[RCS]: $initscript"
+		$initscript
+	fi
+done
+
+mount -t jffs2 /dev/mtdblock3 /mnt/mtd/
+
+LD_LIBRARY_PATH="/usr/local/lib:/usr/lib:/mnt/mtd"
+
+export PATH
+export LD_LIBRARY_PATH
+
+if [ -e "/mnt/mtd/gup.sh" ] ;
+then
+        sh /mnt/mtd/gup.sh
+fi
+
+cd /mnt/mtd/
+sh boot.sh

@@ -40,29 +40,12 @@
 
 + Loaded 2 password hashes with 2 different salts (descrypt, traditional crypt(3) [DES 128/128 SSE2])
 + Proceeding with wordlist:/usr/share/john/password.lst, rules:Wordlist
-+ 1001chin         (root)
 + 123456           (guest)
 
 + root@kali:~$ map -sS -sV 192.168.1.11
 
 + Starting Nmap 7.91 ( https://nmap.org )
 + PORT     STATE SERVICE    VERSION
-+ 80/tcp    open  tcpwrapped
-+ 8080/tcp  open  http       Mini web server 1.0 (ZTE ZXV10 W300 ADSL router http config)
++ 80/tcp   open  tcpwrapped
++ 8080/tcp open  http       Mini web server 1.0 (ZTE ZXV10 W300 ADSL router http config)
 + 58000/tcp open  http       CPE Server TR-069 remote access 1.0
-|_http-server-header: CPE-SERVER/1.0 Supports only GET
-|_http-title: Site doesn't have a title.
-+ 17000/tcp open  unknown
-| fingerprint-strings: 
-|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GetRequest, HTTPOptions, RPCCheck, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
-|     head
-|   GenericLines: 
-|     head
-|     1111
-|     1111
-|     1111
-|     1111
-|   Help, NULL: 
-|     head
-|     1111
-|_    1111
