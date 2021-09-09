@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<status>success</status>
+	<types>
+		<videoType>
+			<enum>NTSC</enum>
+			<enum>PAL</enum>
+		</videoType>
+	</types>
+	<content>
+		<deviceNumber>1</deviceNumber>
+		<name>Device Name</name>
+		<videoType type="videoType">PAL</videoType>
+		<autoLogin>false</autoLogin>
+		<bootWizardSwitch>true</bootWizardSwitch>
+		<autoLogout>true</autoLogout>
+		<autoLogoutWaitTime unit="s">60</autoLogoutWaitTime>
+		<!--当前分辨率，scale UI输出是否支持缩放，为true表示支持，false或没有此属性表示不支持   0表示主输出-->
+		<resolution type="resolution">
+			<item index="0" scale="false">1920x1080</item>
+		</resolution>
+		<firstStart>true</firstStart>
+		<languageType>0x0408</languageType>
+		<!--通道信号类型,模拟通道：AHD/TVI；IP通道：D-->
+		<channelSignalType>AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO:AUTO</channelSignalType>
+		<channelSignalLite>false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false:false</channelSignalLite>
+		<spot>true</spot>
+		<productModel>DVR</productModel>
+		<defaultUser>
+			<item type="superAdmin" password="123456">admin</item>
+		</defaultUser>
+	</content>
+</response>
