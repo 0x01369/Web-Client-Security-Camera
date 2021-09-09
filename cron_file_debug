@@ -1,0 +1,6 @@
+##*/1 * * * * /mnt/mtd/record_sysinfo.sh >> /mnt/nfs/running.today
+*/1 * * * * /mnt/mtd/record_vdec.sh
+#在crontab中%需要被转义(因为 % 在crontab表示命令的结束)
+55 23 * * 0,4 /bin/tar zcvf /mnt/nfs/running.record-`/bin/date +\%Y\%m\%d`.tar.gz -C /mnt/nfs running.today --remove-files
+55 23 * * 0,4 /bin/tar zcvf /mnt/nfs/iostat.log-`/bin/date +\%Y\%m\%d`.tar.gz -C /mnt/nfs iostat.log --remove-files
+55 23 * * 0,4 /bin/tar zcvf /mnt/nfs/ifstat.log-`/bin/date +\%Y\%m\%d`.tar.gz -C /mnt/nfs ifstat.log --remove-files
