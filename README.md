@@ -2,9 +2,9 @@
 
 # IoT Device Security Camera
 
-<img src="https://raw.githubusercontent.com/Dark-NetWork/Web-Client-Security-Camera/main/appName.png" class="shrinkToFit" width="350" height="55">
+<img src="https://raw.githubusercontent.com/0x01369/Web-Client-Security-Camera/main/appName.png" class="shrinkToFit" width="350" height="55">
 
-<img src="https://raw.githubusercontent.com/Dark-NetWork/Web-Client-Security-Camera/main/Login_LoginContent.png" class="shrinkToFit" width="693" height="236">
+<img src="https://raw.githubusercontent.com/0x01369/Web-Client-Security-Camera/main/Login_LoginContent.png" class="shrinkToFit" width="693" height="236">
 
 + root@kali:~$  nikto -h 192.168.1.11
 
